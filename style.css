@@ -44,7 +44,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 160vh;
 }
 
 .photo {
@@ -179,7 +179,7 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.article {
+.article, .work, .helloWorld, .helloWorldWorks, .helloWorldArticles {
     border-radius: 5px;
     width: 600px;
     color: #fff;
@@ -222,4 +222,81 @@ nav a:hover {
     line-height: 14px;
     margin-left: 50px;
     padding-top: 100px;
+}
+
+.work {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.site  {
+    width: 270px;
+    height: 270px;
+    border-radius: 5px;
+    margin: 0 15px;
+    opacity: 0.5;
+    filter: grayscale(1);
+    overflow: hidden;
+}
+
+.site img {
+    width: 270px;
+    border-radius: 5px;
+}
+
+.site:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.work section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 250px;
+    margin-left: 15px;
+}
+
+.work section a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.helloWorld {
+    width: 400px;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+.helloWorld h1 {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.helloWorld h2 {
+    margin: 0 20px 0 20px;
+}
+
+.helloWorld:nth-child(2) {
+    text-align: left;
+    width: 200px;
+}
+
+.container > section {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.container > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.helloWorldWorks, .helloWorldArticles {
+    margin: 0;
+    height: 100px;
 }
