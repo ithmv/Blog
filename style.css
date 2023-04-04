@@ -1,0 +1,225 @@
+body {
+    background: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: #181818;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #0D0D0D;
+    padding: 14px 15px;
+    margin-bottom: 20px;
+}
+
+nav > a {
+    color: #fff;
+    padding: 14px 15px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background: lightblue;
+    transition: .5s;
+    color: black;
+    font-weight: bolder;
+}
+
+.leftBox {
+    width: 300px;
+    float: left;
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-50%);
+}
+
+.leftBox > section {
+    margin: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.leftBox > section p {
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.leftBox > section > span {
+    color: #fff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.leftBox  > span {
+    margin-top: 60px;
+    color: #fff;
+    width: 260px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+
+.social img#git {
+    margin-left: 0;
+    filter: invert();
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.buttons > a {
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.buttons > a:nth-child(1) {
+    background: #ED3024;
+    box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+    margin-right: 28px;
+}
+
+.buttons > a:nth-child(2) { 
+    background: #3137C9;
+    box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+}
+
+.container {
+    width: 700px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog {
+    width: 600px;
+    background: #202020;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog > section {
+    color: #fff;
+    margin: 25px 25px 20px 25px;
+}
+
+.blog > section > h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.blog > section > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #D2D2D2;
+}
+
+.blog a {
+    color: #107EFF;
+    text-align: right;
+}
+
+.blog > section:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.article {
+    border-radius: 5px;
+    width: 600px;
+    color: #fff;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+    background: #202020;
+    margin-bottom: 200px;
+    padding: 20px 0;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 25px;
+    margin-left: 30px;
+}
+
+.article > span p {
+    padding: 0 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.article > span p::first-letter {
+    margin-left: 30px;
+}
+
+.article a {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 50px;
+    padding-top: 100px;
+}
