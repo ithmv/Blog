@@ -324,10 +324,12 @@ nav a:hover {
         }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 420px) {
 
     .wrapper {
-        max-width: min-content;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .container {
@@ -342,20 +344,32 @@ nav a:hover {
     }
 
     .blog {
-        max-width: 700px;
+        max-width: 300px;
     }
 
     .article {
-        max-width: 500px;
+        max-width: 300px;
     }
 
     .article img {
-        max-width: 700px;
+        max-width: 300px;
+    }
+
+    .helloWorld:nth-child(2) {
+        display: none;
+    }
+    
+    .helloWorldWorks, .helloWorldArticles {
+        max-width: 300px;
+    }
+
+    .helloWorld {
+        max-width: 320px;
+    }
+
+    nav {
+        text-align: center;
+        width: 100vw;
     }
 }
 
-@media only screen and (max-width: 520px) {
-    body {
-        transform: scale(0.7);
-    }
-}
