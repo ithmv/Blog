@@ -298,5 +298,58 @@ nav a:hover {
 
 .helloWorldWorks, .helloWorldArticles {
     margin: 0;
-    height: 100px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+        .wrapper {
+            max-width: fit-content;
+        }
+
+        .leftBox {
+            float: none;
+            display: none;
+        }
+        
+        .container {
+            margin: auto;
+            float: none;
+        }
+
+        nav {
+            text-align: center;
+        }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .wrapper {
+        max-width: min-content;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: min-content;
+    }
+
+    .container > section {
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .blog {
+        max-width: 700px;
+    }
+
+    .article {
+        max-width: 500px;
+    }
+
+    .article img {
+        max-width: 700px;
+    }
 }
